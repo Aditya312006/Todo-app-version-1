@@ -1,0 +1,76 @@
+<!DOCTYPE html > 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> Todo App </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1 id="main-heading"><span class="span">T</span>o<span class="span">d</span>o App </h1>
+    <!-- <hr> -->
+    <form id="form">
+        <label>
+            Task name
+            <input class="task-input" type="text" placeholder="Add Task" />
+        </label>
+        
+
+
+    <select name="category" id="category">
+        <option value="category" selected>Category</option>
+        <option value="category"> Study </option>
+        <option value="category"> Health </option>
+        <option value="category"> Education</option>
+        <option value="category"> Market </option>
+        <option value="category"> Shopping </option>
+        <option value="category"> Personal </option>
+
+    </select>
+
+    
+    <label >
+        Priority 
+        
+    <input type="radio" name="priority" />
+    <label for="priority"> High </label>
+
+    <input type="radio" name="priority" />
+    <label for="priority"> Medium </label>
+
+    <input type="radio" name="priority" />
+    <label for="priority"> Low </label>
+
+
+    </label>
+    <br>
+    <button class="btn" type="submit">Add Task </button>
+
+    </form>
+
+    <!-- <hr> -->
+
+
+    <div class="task_list  ">
+        <h2> Today's Task</h2>
+        <ul class="list ">
+           
+         </ul>
+
+    </div>
+
+    <div class="complete-task">
+        <h2> Completed Task </h2>
+        <ul class="completed-list"> 
+
+        </ul>
+
+    </div>
+    
+    
+    
+
+<script src="script.js"></script>
+</body>
+</html>
