@@ -12,15 +12,34 @@ console.log(list);
 
 const completedList = document.querySelector(".completed-list");
 
+const category = document.querySelector("#category");
+
+const priorities=document.querySelectorAll('input[name="priority"]');
+
 
 
 form.addEventListener("submit", function(event){
     event.preventDefault();
+    // console.log(category.value);
+    console.log("form submitted");
 
     if(taskInput.value.trim() === ""){
         alert("Please enter a task.");
         return;
     };
+    if(category.value==="category"){
+        alert("Please select category");
+        return;
+    };
+
+    
+    const li= document.createElement("li");
+
+    
+
+    
+        
+
     const allTasks=document.querySelectorAll(".task-text");
 
     for ( const task of allTasks){
@@ -30,7 +49,6 @@ form.addEventListener("submit", function(event){
         }
     };
 
-    const li= document.createElement("li");
 
     // li.innerText=taskInput.value.trim();
 
@@ -59,7 +77,47 @@ form.addEventListener("submit", function(event){
     taskText.innerText=taskInput.value.trim();
     taskText.classList.add("task-text");
     li.appendChild(taskText);
+
+    const categoryText = document.createElement("span");
+    categoryText.innerText=category.value;
+    categoryText.classList.add("category-text");
+
+    li.appendChild(categoryText);
+
+    let selectedPriority="";
+
+    for (const priority of priorities){
+        if(priority.checked){
+            selectedPriority=priority.value;
+
+
+        }
+    }
+    if(selectedPriority===""){
+        alert("Please select priority");
+        return;
+
+    }
+
+    const priorityText=document.createElement("span")
+
+    priorityText.innerText=selectedPriority;
+
+    priorityText.classList.add("priority-text");
+    li.appendChild(priorityText);
+
+    if (selectedPriority==="High"){
+        priorityText.classList.add("high-priority");
+    }
+    else if(selectedPriority ==="Medium"){
+        priorityText.classList.add("medium-priority");
+    }else if (selectedPriority==="Low"){
+        priorityText.classList.add("low-priority");
+    }
+   
+
     
+
 
 
 

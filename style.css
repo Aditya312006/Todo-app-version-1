@@ -67,3 +67,40 @@ body{
     margin:10px 0px;
 
 }
+.task-list,
+.completed-task{
+    width:80%;
+    margin:20px auto;
+}
+
+.category-text{
+    background-color:lightblue;
+    padding:5px 10px;
+    border-radius:20px;
+    margin-left:30px;
+    
+}
+
+.priority-text{
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+    margin-left:20px;
+}
+.high-priority{
+    background-color: red;
+}
+.medium-priority{
+    background-color: yellow;
+}
+.low-priority{
+    background-color:green
+
+}
+
+
+.task-btn{
+    margin-left:50px;
+    border-radius:5px;
+}
