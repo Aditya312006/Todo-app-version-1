@@ -27,3 +27,7 @@ A modern Todo application built using HTML, CSS, and JavaScript. It helps users 
 
 GitHub Repository:
 https://github.com/Aditya312006/Todo-app-version-1
+
+## 📸 Project Screenshot
+
+![Todo App Screenshot](assets/todo-app.png)
